@@ -1,57 +1,72 @@
 TerraTrace 🛰️
+
 Satellite Evidence for Smarter Industrial Siting
+
 TerraTrace is a web-based geospatial platform intended to help users explore industrial facilities worldwide, investigate environmental conditions around them, and eventually evaluate locations for new industrial and energy projects using satellite-derived evidence.
 This repository currently contains the interactive frontend and global facility explorer. Satellite monitoring analyses and site-suitability recommendations are planned modules and are not yet operational in the supplied version.
-Developer 4 — Frontend & Integration
+
+Frontend & Integration
+
 My responsibility in the TerraTrace team is the frontend interface, interactive visualization, user experience, and integration of future analytical modules. The current implementation focuses on making the underlying facility inventory accessible through an interactive map and providing an interface into which monitoring and site-selection capabilities can later be integrated.
+
 Current implementation
+
 Interactive global facility map
+
 Displays worldwide power-generation and industrial facilities on a zoomable map.
+
 Uses React Leaflet / Leaflet and Esri World Street Map tiles.
+
 Groups nearby facilities into numbered, color-coded clusters to manage dense map regions; zooming in separates facilities.
+
 Shows cluster breakdowns by facility type and individual facility information, when available, including name, operational status, capacity, starting year, operator/owner, dataset, IDs, coordinates, and a source link.
+
 Provides a facility-type legend with clickable category toggles and a live count of visible map markers.
+
 Search and geolocation
+
 Searches locations using OpenStreetMap Nominatim.
+
 Accepts geographic coordinates in decimal degrees and supported degrees–minutes–seconds notation.
+
 Moves/zooms the map to the selected result, places a location pin, and displays its label and coordinates.
+
 Displays returned polygon boundaries where available; otherwise uses the location's bounding box.
+
 Performs reverse geocoding for coordinate searches when available.
+
 Filters and counts
+
 The collapsible sidebar supports:
+
 Facility category: 16 facility classes, including solar, wind, coal power, oil/gas power, hydropower, nuclear, bioenergy, geothermal, iron and steel, cement and concrete, chemicals, coal mining, LNG terminals, oil/gas extraction, iron ore mining, and coal terminals.
+
 Facility status: operating, under construction, pre-construction, announced, retired, mothballed, cancelled/shelved, and unknown/other.
+
 Power capacity: under 50 MW, 50–250 MW, 250–1,000 MW, or above 1,000 MW. Capacity filters apply to power facilities; industrial production-capacity units are not compared against MW.
+
 Country: searchable, multi-select country list.
+
 Counts: overall matching facility count and a filtered breakdown by facility category; these are based on records rather than the number of clustered map markers.
+
 The initial filter configuration selects India, Operating facilities, all facility types, and all capacity ranges. Users can change these selections.
+
 Interface and navigation
+
 Introductory welcome dialog explaining the project and basic usage, with a Next button to enter the map.
+
 Top-bar Monitor and Explore dropdowns.
+
 Collapsible filter sidebar, loading state, error message for missing/invalid facility data, and responsive styles in the supplied CSS.
+
 Planned modules (not yet implemented)
+
 The following are visible in the interface as disabled “Soon” options. They do not currently run satellite analysis or site-suitability calculations.
+
 Monitor — satellite environmental indicators	Explore — new-project siting
+
 Air pollution (NO₂)	Nuclear power plant
-Thermal hotspots	Thermal power plant
-Methane emissions	Solar plant
-Land surface temperature	Wind plant
-Vegetation health (NDVI)	Hydropower plant
-Land-use change	Oil/gas power plant
-Water quality and turbidity	Bioenergy plant
-	Geothermal plant
-	Manufacturing sites
-Integration direction: The frontend can later consume backend endpoints for satellite observations, geospatial buffers/control regions, environmental trend statistics, and suitability rankings. No corresponding live API integration is present in the inspected frontend code.
-Technology stack
-Area	Technology
-User interface	React 19, JavaScript (JSX), CSS
-Development / build	Vite 8
-Maps and spatial UI	Leaflet 1.9, React Leaflet 5
-Basemap	Esri World Street Map tiles
-Search / reverse geocoding	OpenStreetMap Nominatim API
-Facility inventory	Static, versioned JSON served from `public/data/facilities.json`
-Linting	Oxlint
-This version does not include a FastAPI backend or a database connection. The facility explorer operates on a static JSON dataset loaded in the browser.
+
 Getting started
 Prerequisites
 Node.js and npm (use a current Node.js version compatible with Vite 8; verify with `node --version`).
