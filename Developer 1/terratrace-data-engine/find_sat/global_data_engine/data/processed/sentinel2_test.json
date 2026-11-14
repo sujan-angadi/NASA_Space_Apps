@@ -1,0 +1,157 @@
+[
+  {
+    "source": "Sentinel-2",
+    "collection": "sentinel-2-l2a",
+    "item_id": "S2A_MSIL2A_20251212T055251_R048_T42QWK_20251212T083709",
+    "observation_datetime": "2025-12-12T05:52:51.024000Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S2_SCL_CLOUD_MASK_v1",
+    "grid_resolution_m": 10,
+    "total_aoi_pixels": 125385,
+    "valid_pixels": 125384,
+    "valid_pixel_percentage": 100.0,
+    "ndvi": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125384,
+      "mean": 0.1693146824836731,
+      "minimum": -0.1722296178340912,
+      "maximum": 0.6590747833251953,
+      "std_dev": 0.13183537125587463
+    },
+    "ndwi_mcfeeters": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125384,
+      "mean": -0.20990818738937378,
+      "minimum": -0.5999999642372131,
+      "maximum": 0.1721341758966446,
+      "std_dev": 0.11404905468225479
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-2",
+    "collection": "sentinel-2-l2a",
+    "item_id": "S2B_MSIL2A_20251215T055229_R048_T42QWK_20251215T074632",
+    "observation_datetime": "2025-12-15T05:52:29.024000Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S2_SCL_CLOUD_MASK_v1",
+    "grid_resolution_m": 10,
+    "total_aoi_pixels": 125385,
+    "valid_pixels": 125385,
+    "valid_pixel_percentage": 100.0,
+    "ndvi": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125385,
+      "mean": 0.1525200754404068,
+      "minimum": -0.07334963232278824,
+      "maximum": 0.6056497693061829,
+      "std_dev": 0.11648517102003098
+    },
+    "ndwi_mcfeeters": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125385,
+      "mean": -0.1841239631175995,
+      "minimum": -0.5521573424339294,
+      "maximum": 0.1097155436873436,
+      "std_dev": 0.10129992663860321
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-2",
+    "collection": "sentinel-2-l2a",
+    "item_id": "S2C_MSIL2A_20251220T055251_R048_T42QWK_20251220T092511",
+    "observation_datetime": "2025-12-20T05:52:51.025000Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S2_SCL_CLOUD_MASK_v1",
+    "grid_resolution_m": 10,
+    "total_aoi_pixels": 125385,
+    "valid_pixels": 125385,
+    "valid_pixel_percentage": 100.0,
+    "ndvi": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125385,
+      "mean": 0.15320517122745514,
+      "minimum": -0.0916784331202507,
+      "maximum": 0.642615556716919,
+      "std_dev": 0.12052483856678009
+    },
+    "ndwi_mcfeeters": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125385,
+      "mean": -0.19570130109786987,
+      "minimum": -0.5694705843925476,
+      "maximum": 0.10258550941944122,
+      "std_dev": 0.10391455143690109
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-2",
+    "collection": "sentinel-2-l2a",
+    "item_id": "S2B_MSIL2A_20251225T055149_R048_T42QWK_20251225T074525",
+    "observation_datetime": "2025-12-25T05:51:49.024000Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S2_SCL_CLOUD_MASK_v1",
+    "grid_resolution_m": 10,
+    "total_aoi_pixels": 125385,
+    "valid_pixels": 125385,
+    "valid_pixel_percentage": 100.0,
+    "ndvi": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125385,
+      "mean": 0.15451397001743317,
+      "minimum": -0.1895139366388321,
+      "maximum": 0.634990930557251,
+      "std_dev": 0.11748753488063812
+    },
+    "ndwi_mcfeeters": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 125385,
+      "mean": -0.19111031293869019,
+      "minimum": -0.5568927526473999,
+      "maximum": 0.22017869353294373,
+      "std_dev": 0.10092488676309586
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-2",
+    "collection": "sentinel-2-l2a",
+    "item_id": "S2C_MSIL2A_20251230T055251_R048_T42QWK_20251230T091409",
+    "observation_datetime": "2025-12-30T05:52:51.025000Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S2_SCL_CLOUD_MASK_v1",
+    "grid_resolution_m": 10,
+    "total_aoi_pixels": 125385,
+    "valid_pixels": 90443,
+    "valid_pixel_percentage": 72.13,
+    "ndvi": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 90443,
+      "mean": 0.18585367500782013,
+      "minimum": -0.11784511804580688,
+      "maximum": 0.6574727892875671,
+      "std_dev": 0.13095176219940186
+    },
+    "ndwi_mcfeeters": {
+      "unit": "unitless",
+      "status": "success",
+      "valid_pixels": 90443,
+      "mean": -0.22553008794784546,
+      "minimum": -0.578116774559021,
+      "maximum": 0.14175105094909668,
+      "std_dev": 0.10805486887693405
+    },
+    "status": "success"
+  }
+]

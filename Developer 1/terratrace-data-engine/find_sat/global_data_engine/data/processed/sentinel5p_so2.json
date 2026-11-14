@@ -1,0 +1,47 @@
+[
+  {
+    "source": "Sentinel-5P",
+    "collection": "sentinel-5p-l2-netcdf",
+    "item_id": "S5P_NRTI_L2__SO2____20251231T090313_20251231T090813_42576_03_020800_20251231T094345",
+    "product": "SO2",
+    "observation_datetime": "2025-12-31T09:03:07Z",
+    "observation_end": "2025-12-31T09:08:20Z",
+    "processing_status": "Nominal",
+    "aoi_name": "Jamnagar_Test_AOI",
+    "aoi_area_km2": 12.546193860310495,
+    "aoi_bbox": [
+      69.83019600899469,
+      22.316086811809512,
+      69.86902399100532,
+      22.35220914796079
+    ],
+    "variable": "sulfurdioxide_total_vertical_column",
+    "unit": "mol m-2",
+    "measurement": "total_vertical_column_density",
+    "quality_policy": {
+      "name": "S5P_SO2_QA_v1",
+      "qa_variable": "qa_value",
+      "minimum_qa": 0.5
+    },
+    "total_swath_pixels": 160650,
+    "pixels_inside_aoi": 2,
+    "valid_pixels": 1,
+    "valid_pixel_coverage_percent": 50.0,
+    "status": "success",
+    "so2": {
+      "mean": -7.511035073548555e-05,
+      "median": -7.511035073548555e-05,
+      "std_dev": 0.0,
+      "minimum": -7.511035073548555e-05,
+      "maximum": -7.511035073548555e-05
+    },
+    "precision": {
+      "mean": 0.00021131620451342314,
+      "median": 0.00021131620451342314,
+      "std_dev": 0.0,
+      "minimum": 0.00021131620451342314,
+      "maximum": 0.00021131620451342314
+    },
+    "mean_qa_value": 1.0
+  }
+]

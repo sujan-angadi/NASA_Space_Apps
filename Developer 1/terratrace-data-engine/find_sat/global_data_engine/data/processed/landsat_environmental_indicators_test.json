@@ -1,0 +1,137 @@
+[
+    {
+        "source": "Landsat 8/9",
+        "collection": "landsat-c2-l2",
+        "item_id": "LC09_L2SP_150045_20251212_02_T1",
+        "observation_datetime": "2025-12-12T05:45:53.258261Z",
+        "aoi_name": "Jamnagar Test",
+        "quality_policy": "LANDSAT_C2_QA_PIXEL_v1",
+        "lst": {
+            "unit": "celsius",
+            "valid_pixels": 13935,
+            "status": "success",
+            "mean": 34.182735443115234,
+            "minimum": 26.529998779296875,
+            "maximum": 44.057586669921875,
+            "std_dev": 1.6281551122665405
+        },
+        "ndvi": {
+            "unit": "unitless",
+            "valid_pixels": 13935,
+            "status": "success",
+            "mean": 0.2812690734863281,
+            "minimum": -0.5543273091316223,
+            "maximum": 0.8267436623573303,
+            "std_dev": 0.16887305676937103
+        },
+        "status": "success"
+    },
+    {
+        "source": "Landsat 8/9",
+        "collection": "landsat-c2-l2",
+        "item_id": "LC08_L2SP_150044_20251220_02_T1",
+        "observation_datetime": "2025-12-20T05:45:25.410592Z",
+        "aoi_name": "Jamnagar Test",
+        "quality_policy": "LANDSAT_C2_QA_PIXEL_v1",
+        "lst": {
+            "unit": "celsius",
+            "valid_pixels": 13935,
+            "status": "success",
+            "mean": 36.44024658203125,
+            "minimum": 27.917694091796875,
+            "maximum": 47.342315673828125,
+            "std_dev": 1.7096836566925049
+        },
+        "ndvi": {
+            "unit": "unitless",
+            "valid_pixels": 13933,
+            "status": "success",
+            "mean": 0.2747110426425934,
+            "minimum": -0.9704310297966003,
+            "maximum": 0.8063603043556213,
+            "std_dev": 0.16455233097076416
+        },
+        "status": "success"
+    },
+    {
+        "source": "Landsat 8/9",
+        "collection": "landsat-c2-l2",
+        "item_id": "LC08_L2SP_150045_20251220_02_T1",
+        "observation_datetime": "2025-12-20T05:45:49.318576Z",
+        "aoi_name": "Jamnagar Test",
+        "quality_policy": "LANDSAT_C2_QA_PIXEL_v1",
+        "lst": {
+            "unit": "celsius",
+            "valid_pixels": 13935,
+            "status": "success",
+            "mean": 36.42892837524414,
+            "minimum": 27.907440185546875,
+            "maximum": 47.314971923828125,
+            "std_dev": 1.7081611156463623
+        },
+        "ndvi": {
+            "unit": "unitless",
+            "valid_pixels": 13934,
+            "status": "success",
+            "mean": 0.27470362186431885,
+            "minimum": -0.7665814161300659,
+            "maximum": 0.8041172623634338,
+            "std_dev": 0.1648886799812317
+        },
+        "status": "success"
+    },
+    {
+        "source": "Landsat 8/9",
+        "collection": "landsat-c2-l2",
+        "item_id": "LC09_L2SP_150044_20251228_02_T1",
+        "observation_datetime": "2025-12-28T05:45:35.206543Z",
+        "aoi_name": "Jamnagar Test",
+        "quality_policy": "LANDSAT_C2_QA_PIXEL_v1",
+        "lst": {
+            "unit": "celsius",
+            "valid_pixels": 13935,
+            "status": "success",
+            "mean": 32.868343353271484,
+            "minimum": 25.849822998046875,
+            "maximum": 40.84124755859375,
+            "std_dev": 1.6122287511825562
+        },
+        "ndvi": {
+            "unit": "unitless",
+            "valid_pixels": 13935,
+            "status": "success",
+            "mean": 0.2604685127735138,
+            "minimum": -0.15696324408054352,
+            "maximum": 0.7628034949302673,
+            "std_dev": 0.14285433292388916
+        },
+        "status": "success"
+    },
+    {
+        "source": "Landsat 8/9",
+        "collection": "landsat-c2-l2",
+        "item_id": "LC09_L2SP_150045_20251228_02_T1",
+        "observation_datetime": "2025-12-28T05:45:59.106030Z",
+        "aoi_name": "Jamnagar Test",
+        "quality_policy": "LANDSAT_C2_QA_PIXEL_v1",
+        "lst": {
+            "unit": "celsius",
+            "valid_pixels": 13752,
+            "status": "success",
+            "mean": 32.87193298339844,
+            "minimum": 25.842987060546875,
+            "maximum": 40.86517333984375,
+            "std_dev": 1.6052991151809692
+        },
+        "ndvi": {
+            "unit": "unitless",
+            "valid_pixels": 13752,
+            "status": "success",
+            "mean": 0.26193705201148987,
+            "minimum": -0.18418927490711212,
+            "maximum": 0.742816150188446,
+            "std_dev": 0.14361393451690674
+        },
+        "status": "success"
+    }
+]
