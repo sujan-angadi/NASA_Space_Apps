@@ -1,0 +1,7 @@
+# Add these to the existing project requirements if not already present
+earthaccess>=0.12
+xarray>=2024.1
+netCDF4>=1.6
+numpy>=1.26
+pyproj>=3.6
+shapely>=2.0

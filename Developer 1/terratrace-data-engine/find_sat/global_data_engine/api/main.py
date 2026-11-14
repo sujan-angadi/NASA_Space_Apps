@@ -1,31 +1,51 @@
-
 from pathlib import Path
+from functools import lru_cache
 import json
 
+import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 
 app = FastAPI(
     title="TerraTrace API",
-    description="Earth observation and environmental change analysis",
-    version="0.1.0",
+    description="Global Earth observation, facility monitoring and environmental change analysis",
+    version="0.2.0",
 )
 
 DATA = Path("data/integration/validated")
+PROCESSED = Path("data/processed")
 
 
 def load_json(filename):
     path = DATA / filename
-
     if not path.exists():
         raise HTTPException(404, f"{filename} not available yet")
-
     with path.open() as file:
         return json.load(file)
 
 
+@lru_cache(maxsize=1)
+def load_facilities():
+    path = PROCESSED / "global_facility_grid_mapping.csv"
+    if not path.exists():
+        raise HTTPException(404, "Global facility mapping not available")
+    return pd.read_csv(path, dtype={"GEM_Location_ID": str})
+
+
+@lru_cache(maxsize=1)
+def load_rainfall():
+    path = PROCESSED / "global_gpm_monthly_rainfall.csv.gz"
+    if not path.exists():
+        raise HTTPException(404, "Global GPM rainfall dataset not available")
+    return pd.read_csv(path)
+
+
+def clean_records(frame):
+    return frame.astype(object).where(pd.notna(frame), None).to_dict("records")
+
+
 @app.get("/health")
 def health():
-    return {"status": "running", "service": "TerraTrace"}
+    return {"status": "running", "service": "TerraTrace", "version": "0.2.0"}
 
 
 @app.get("/observations")
@@ -37,7 +57,6 @@ def observations(
 
     if variable:
         records = [r for r in records if r.get("variable") == variable]
-
     if source:
         records = [r for r in records if r.get("source") == source]
 
@@ -64,6 +83,113 @@ def report():
         "analysis_groups": len(analysis),
         "analysis": analysis,
     }
+
+
 @app.get("/change-detection")
 def change_detection():
     return load_json("change_detection.json")
+
+
+@app.get("/global-stats")
+def global_stats():
+    facilities = load_facilities()
+    rainfall = load_rainfall()
+
+    periods = (
+        rainfall["year"].astype(int).astype(str)
+        + "-"
+        + rainfall["month"].astype(int).astype(str).str.zfill(2)
+    )
+
+    return {
+        "facility_count": len(facilities),
+        "country_count": int(facilities["Country"].nunique()),
+        "facility_types": facilities["Facility_Type"].value_counts().to_dict(),
+        "unique_gpm_pixels": int(rainfall["gpm_pixel_key"].nunique()),
+        "rainfall_observations": len(rainfall),
+        "rainfall_months": int(
+            rainfall[["year", "month"]].drop_duplicates().shape[0]
+        ),
+        "rainfall_period": {
+            "start": periods.min(),
+            "end": periods.max(),
+        },
+        "rainfall_source": "NASA GPM IMERG V07B",
+    }
+
+
+@app.get("/facilities")
+def facilities(
+    country: str | None = None,
+    facility_type: str | None = None,
+    search: str | None = None,
+    limit: int = Query(50, ge=1, le=500),
+    offset: int = Query(0, ge=0),
+):
+    df = load_facilities()
+
+    if country:
+        df = df[df["Country"].str.casefold() == country.casefold()]
+
+    if facility_type:
+        df = df[df["Facility_Type"].str.casefold() == facility_type.casefold()]
+
+    if search:
+        mask = (
+            df["Facility_Name"].str.contains(search, case=False, na=False)
+            | df["Country"].str.contains(search, case=False, na=False)
+        )
+        df = df[mask]
+
+    total = len(df)
+    results = clean_records(df.iloc[offset:offset + limit])
+
+    return {
+        "total": total,
+        "limit": limit,
+        "offset": offset,
+        "facilities": results,
+    }
+
+
+@app.get("/facilities/{facility_id}/rainfall")
+def facility_rainfall(facility_id: str):
+    facilities_df = load_facilities()
+    match = facilities_df[
+        facilities_df["GEM_Location_ID"].astype(str) == str(facility_id)
+    ]
+
+    if match.empty:
+        raise HTTPException(404, "Facility not found")
+
+    facility = match.iloc[0]
+    pixel_key = facility["gpm_pixel_key"]
+
+    rainfall = load_rainfall()
+    result = rainfall[rainfall["gpm_pixel_key"] == pixel_key].copy()
+    result = result.sort_values(["year", "month"])
+
+    return {
+        "facility": {
+            "id": str(facility["GEM_Location_ID"]),
+            "name": facility["Facility_Name"],
+            "country": facility["Country"],
+            "type": facility["Facility_Type"],
+            "latitude": float(facility["Latitude"]),
+            "longitude": float(facility["Longitude"]),
+            "gpm_pixel_key": pixel_key,
+        },
+        "rainfall_count": len(result),
+        "rainfall": clean_records(result),
+    }
+
+
+@app.get("/facilities/{facility_id}")
+def facility_detail(facility_id: str):
+    df = load_facilities()
+    match = df[df["GEM_Location_ID"].astype(str) == str(facility_id)]
+
+    if match.empty:
+        raise HTTPException(404, "Facility not found")
+
+    return clean_records(match)[0]
