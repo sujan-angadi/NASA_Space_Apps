@@ -1,0 +1,98 @@
+{
+  "validation_status": "PASS",
+  "checks": {
+    "facility_ids_unique": {
+      "passed": true
+    },
+    "mapping_facility_ids_unique": {
+      "passed": true
+    },
+    "all_facilities_have_mapping": {
+      "passed": true
+    },
+    "all_mapped_pixels_have_rainfall": {
+      "passed": true
+    },
+    "one_rainfall_record_per_pixel_month": {
+      "passed": true
+    },
+    "all_45_months_present_for_every_mapped_pixel": {
+      "passed": true
+    },
+    "rainfall_values_nonnegative": {
+      "passed": true
+    },
+    "facility_coordinates_within_valid_ranges": {
+      "passed": true
+    },
+    "rainfall_required_fields_complete": {
+      "passed": true
+    }
+  },
+  "counts": {
+    "facilities": 145596,
+    "facility_mapping_rows": 145596,
+    "unique_gpm_pixels": 68247,
+    "gpm_grid_month_rows": 3071115,
+    "months": 45,
+    "expected_facility_month_rows_after_join": 6551820
+  },
+  "coverage": {
+    "start": "2022-01",
+    "end": "2025-09",
+    "months": [
+      "2022-01",
+      "2022-02",
+      "2022-03",
+      "2022-04",
+      "2022-05",
+      "2022-06",
+      "2022-07",
+      "2022-08",
+      "2022-09",
+      "2022-10",
+      "2022-11",
+      "2022-12",
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-04",
+      "2023-05",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2023-12",
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-09",
+      "2024-10",
+      "2024-11",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09"
+    ]
+  },
+  "notes": [
+    "The facility-to-GPM mapping is complete for the supplied facility database.",
+    "All mapped GPM pixels have 45 monthly rainfall records in the supplied archive.",
+    "The full facility-expanded 6.55-million-row table is intentionally not duplicated; use the compact facility-to-grid lookup and the grid-month rainfall table joined by gpm_pixel_key.",
+    "This join returns a facility's rainfall series while preserving one observation per GPM pixel and month.",
+    "Quality_index and random_error_mm_hr are retained as source fields; no additional quality threshold was applied."
+  ]
+}

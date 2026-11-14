@@ -1,3 +1,4 @@
+from .environmental import router as environmental_router
 from pathlib import Path
 from functools import lru_cache
 import json
@@ -10,6 +11,8 @@ app = FastAPI(
     description="Global Earth observation, facility monitoring and environmental change analysis",
     version="0.2.0",
 )
+
+app.include_router(environmental_router)
 
 DATA = Path("data/integration/validated")
 PROCESSED = Path("data/processed")

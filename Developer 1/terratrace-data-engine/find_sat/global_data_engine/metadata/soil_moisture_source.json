@@ -1,0 +1,34 @@
+{
+  "dataset_name": "SMAP L4 surface and root-zone soil moisture",
+  "access_service": "NASA POWER high-resolution data service",
+  "source_product": "SMAP L4",
+  "nominal_spatial_resolution": "approximately 0.09 degrees / 9 km",
+  "native_temporal_resolution": "3-hourly SMAP L4 product; script requests daily NASA POWER values",
+  "coverage_start": "2015-03-31",
+  "parameters": {
+    "SFMC": {
+      "meaning": "surface soil moisture content",
+      "unit": "m3/m3"
+    },
+    "RZMC": {
+      "meaning": "root-zone soil moisture content",
+      "unit": "m3/m3"
+    },
+    "PRMC": {
+      "meaning": "profile soil moisture content",
+      "unit": "m3/m3"
+    }
+  },
+  "limitations": [
+    "The Phase 2 script creates a geographically distributed pilot, not a complete archive for all 145,596 facilities.",
+    "A point request represents the source grid cell around the facility coordinate, not a field measurement at the facility.",
+    "Do not interpret soil moisture as groundwater availability.",
+    "Monthly means are calculated from available daily values; missing values are not zero.",
+    "SMAP L4 is a model-assimilation product using SMAP observations, not a direct in-situ measurement."
+  ],
+  "official_references": [
+    "https://power.larc.nasa.gov/docs/methodology/data/sources_hydrology/",
+    "https://power.larc.nasa.gov/docs/methodology/",
+    "https://nsidc.org/data/spl4smau/versions/8"
+  ]
+}

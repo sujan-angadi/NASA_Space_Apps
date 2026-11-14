@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.netrc
+data/raw/
+data/integration/phase2/global_facility_monthly_rainfall.csv.gz
+data/integration/phase2/global_facility_daily_soil_moisture.csv.gz
+data/integration/phase2/global_facility_monthly_soil_moisture.csv.gz
+data/integration/phase2/soil_moisture_acquisition_errors.csv
+data/integration/phase2/soil_moisture_inventory.json
+data/integration/phase2/soil_moisture_pilot_facilities.csv
+phase1_inputs.zip
+api/PHASE2_API_PATCH.py.txt

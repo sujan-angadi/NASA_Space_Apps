@@ -1,0 +1,103 @@
+{
+  "dataset": "global_facility_rainfall_lookup.csv.gz + global_gpm_grid_monthly_with_facility_counts.csv.gz",
+  "join": {
+    "left_file": "global_facility_rainfall_lookup.csv.gz",
+    "right_file": "global_gpm_grid_monthly_with_facility_counts.csv.gz",
+    "keys": [
+      "gpm_pixel_key"
+    ],
+    "monthly_join_keys": [
+      "gpm_pixel_key",
+      "year",
+      "month"
+    ],
+    "relationship": "many facilities to one GPM pixel; one GPM pixel to one record per month"
+  },
+  "fields": {
+    "facility_id": {
+      "source_column": "GEM_Location_ID",
+      "type": "string",
+      "description": "Stable facility identifier; preserve as string."
+    },
+    "facility_name": {
+      "type": "string",
+      "description": "Facility name from supplied power-facility database."
+    },
+    "country": {
+      "type": "string",
+      "description": "Country/territory from supplied database."
+    },
+    "facility_type": {
+      "type": "string",
+      "description": "Power-facility category."
+    },
+    "latitude": {
+      "type": "float",
+      "unit": "decimal degrees",
+      "description": "Facility coordinate latitude."
+    },
+    "longitude": {
+      "type": "float",
+      "unit": "decimal degrees",
+      "description": "Facility coordinate longitude."
+    },
+    "gpm_pixel_key": {
+      "type": "string",
+      "description": "GPM grid-cell identifier used to link facility to rainfall."
+    },
+    "year": {
+      "type": "integer",
+      "description": "Calendar year of monthly rainfall record."
+    },
+    "month": {
+      "type": "integer",
+      "range": "1-12",
+      "description": "Calendar month of rainfall record."
+    },
+    "precipitation_mean_rate_mm_hr": {
+      "type": "float",
+      "unit": "mm/hr",
+      "description": "Mean precipitation rate for the GPM grid cell and month."
+    },
+    "estimated_monthly_accumulation_mm": {
+      "type": "float",
+      "unit": "mm/month",
+      "description": "Monthly accumulation estimated from monthly mean rate."
+    },
+    "quality_index": {
+      "type": "float",
+      "description": "Source-provided GPM quality index; retain as supplied, do not interpret as a probability."
+    },
+    "random_error_mm_hr": {
+      "type": "float",
+      "unit": "mm/hr",
+      "description": "Source-provided random error estimate."
+    },
+    "source": {
+      "type": "string",
+      "description": "Source dataset label."
+    },
+    "unit": {
+      "type": "string",
+      "description": "Source unit/derived accumulation label."
+    },
+    "mapped_facility_count": {
+      "type": "integer",
+      "description": "Number of facilities in the supplied facility mapping that use this GPM pixel."
+    },
+    "facility_linkage_status": {
+      "type": "string",
+      "values": [
+        "mapped_to_facility",
+        "unmapped_grid"
+      ],
+      "description": "Whether this GPM grid-month row is linked to at least one supplied facility."
+    }
+  },
+  "interpretation_notes": [
+    "Use rainfall accumulation in mm/month for monthly comparisons.",
+    "Do not sum rainfall values across facilities sharing a pixel; those values are repeated estimates, not independent rainfall measurements.",
+    "For regional summaries, aggregate unique GPM pixels rather than facility-expanded rows to avoid overweighting grid cells containing many facilities.",
+    "The provided GPM dataset covers 2022-01 through 2025-09 (45 months)."
+  ]
+}
