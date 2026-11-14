@@ -114,28 +114,7 @@ TerraTrace/
 │   ├── main.jsx                     # React application entry point
 │   └── assets/
 └── README.md
-```
-The ZIP also contains `node_modules/` and `dist/`, which are local dependencies and generated build artifacts; both are excluded by the supplied `.gitignore` and do not need to be committed.
-Facility data and limitations
-The runtime file `public/data/facilities.json` stores facility records with a compact indexed-array format; the frontend expects `schemaVersion: 3` and associated `countries`, `types`, `statuses`, and `data` arrays.
-The archive includes additional CSV files and industrial/power-sector tracker workbooks, including Global Energy Monitor (GEM)-named datasets. The frontend loads `facilities.json`, not the spreadsheets directly at runtime.
-Inventory completeness, freshness, coordinates, statuses, and capacity information depend on the underlying datasets; the map should not be described as live satellite monitoring.
-Location search relies on an external geocoding service. Production usage should respect Nominatim's usage policy and the basemap provider's licensing/attribution requirements.
-For external release, review licenses and attribution for each included dataset, and consider excluding unneeded large raw source files from the public deployment bundle.
-Planned development and integration
-Connect the Monitor UI to the data/backend developer's environmental observation endpoints.
-Integrate GIS geometry layers and reference/buffer regions with the map.
-Present statistical analysis outputs using charts, trend summaries, confidence measures, and appropriate caveats.
-Connect Explore to site-suitability results with explainable criteria, map overlays, and rankings.
-Add exportable environmental assessment reports when corresponding report APIs are available.
-Add automated tests, accessibility checks, integration tests, and deployment validation.
-These are next steps, not claims of functionality already completed.
-Contribution scope
-Developer 4 — Frontend & Integration: React interface, interactive map, search and facility visualization, user-facing filters, navigation, onboarding, and future integration of backend/GIS/analysis modules.
-Project team: Other team members own satellite data acquisition, GIS processing, and scientific/statistical analysis. Frontend-backend contracts should be agreed before those features are enabled.
-Acknowledgments and attribution
-React, Vite, Leaflet, and React Leaflet.
-OpenStreetMap Nominatim for location lookup.
+
 Esri World Street Map for basemap tiles (attribution is displayed by the map layer).
 Source tracker files included in the archive should retain their own applicable source and licensing acknowledgments, including relevant Global Energy Monitor tracker credits.
 ---
