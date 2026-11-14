@@ -1986,3 +1986,121 @@ The architecture, integrated datasets and three-phase development structure form
 **Contribution:** Developer 1 — Satellite and Global Data Engineering, Geospatial Processing, Environmental Integration, GPM Rainfall, SMAP Soil Moisture, Environmental Analysis and FastAPI Backend
 
 **Repository:** https://github.com/sujan-angadi/NASA_Space_Apps/tree/main/Developer%201
+
+# Mandatory Development Constraints and Data Usage Policy
+
+This section defines the operating constraints for all subsequent development of TerraTrace's Global Data Engine.
+
+These constraints form part of the established project architecture and should be treated as the default requirements when modifying, extending or integrating the system.
+
+## 1. Authoritative Data Sources
+
+The datasets already integrated into the repository constitute the approved data foundation for this project.
+
+The primary data sources are:
+
+- `data/integration/phase1/`
+- `data/integration/phase2/`
+- `metadata/soil_moisture_source.json`
+- Existing processed satellite observation files.
+- Existing normalized observation and analysis outputs.
+- Existing API modules and their response structures.
+
+These files are the authoritative inputs for downstream development.
+
+## 2. Data Acquisition Boundary
+
+The current development scope is based on the existing integrated datasets.
+
+New satellite missions, external datasets, additional data providers or alternative acquisition pipelines are not assumed to be necessary dependencies.
+
+Development should proceed using the available data.
+
+If a required field is unavailable, the implementation should handle that limitation explicitly rather than silently introducing a new data dependency.
+
+## 3. No Unnecessary Dataset Expansion
+
+Additional datasets should not be proposed or introduced merely because they could theoretically improve the system.
+
+The existing data foundation is considered sufficient for the defined implementation objectives.
+
+Any development decision should first consider whether the required functionality can be achieved using the existing records, metadata, processing outputs and API interfaces.
+
+## 4. No Duplicate Acquisition or Integration Pipelines
+
+Existing acquisition and integration modules must be reused where applicable.
+
+Do not recreate functionality that is already implemented.
+
+Do not introduce duplicate pipelines for GPM rainfall, facility mapping, SMAP extraction or environmental integration when the required outputs are already available.
+
+## 5. Missing Data and Limitations
+
+Missing values must remain distinguishable from actual zero measurements.
+
+The implementation must preserve:
+
+- Original measurement units.
+- Observation timestamps.
+- Facility identifiers.
+- Geographical coordinates.
+- Source metadata.
+- Spatial resolution.
+- Temporal resolution.
+- Data-quality information.
+
+Unavailable measurements must be handled through appropriate validation and presentation logic.
+
+They must not automatically trigger additional data acquisition.
+
+## 6. Existing Architecture Compatibility
+
+All new implementation must remain compatible with the existing data structures and API contracts.
+
+Before introducing a new module, inspect the existing project implementation and reuse available functionality.
+
+Avoid unnecessary changes to established file formats, field names, API routes and data schemas.
+
+Changes to existing interfaces should be made only when required by a demonstrated functional or technical issue.
+
+## 7. Development Decision Procedure
+
+For every proposed implementation:
+
+1. Identify the required functionality.
+2. Inspect the existing integrated datasets.
+3. Identify the fields and API endpoints already available.
+4. Determine whether the functionality can be implemented with those resources.
+5. Implement the solution using the existing data foundation.
+6. Validate the result against the established data contract.
+
+A missing capability should first be evaluated as an implementation, transformation, validation or API problem.
+
+It should not automatically be treated as a data-acquisition problem.
+
+## 8. Scope Stability
+
+The Global Data Engine has exactly three development phases:
+
+- Phase 1 — Global Facility and Rainfall Foundation.
+- Phase 2 — Soil Moisture and Environmental Integration.
+- Phase 3 — API Integration and Application Readiness.
+
+Phase 3 is the final phase of this module.
+
+The established phase structure must remain unchanged. Subsequent work should focus on application development, visualization, analysis and integration using the existing data foundation.
+
+## 9. Completion Standard
+
+The data-engineering foundation is considered complete when:
+
+- The integrated datasets are accessible.
+- Facility identifiers and geographical mappings are usable.
+- Environmental records can be retrieved.
+- API responses are functional.
+- Missing values and source limitations are preserved.
+- Downstream application components can consume the available data.
+
+Further dataset collection is not a completion criterion.
+
+**Development principle:** Build on the integrated data foundation. Solve implementation problems within the established architecture. Preserve the existing scope and avoid unnecessary expansion.
