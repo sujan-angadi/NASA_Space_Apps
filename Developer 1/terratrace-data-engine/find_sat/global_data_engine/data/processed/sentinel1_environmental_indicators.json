@@ -1,0 +1,622 @@
+[
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20220322T011840_20220322T011905_042427_050F24",
+    "observation_datetime": "2022-03-22T01:18:52.812146Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 182.5103302001953,
+      "median": 183.0,
+      "std_dev": 0.6158704161643982,
+      "minimum": 181.0,
+      "maximum": 184.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 147.0187530517578,
+      "median": 147.0,
+      "std_dev": 0.5553562045097351,
+      "minimum": 146.0,
+      "maximum": 148.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20220626T011845_20220626T011910_043827_053B70",
+    "observation_datetime": "2022-06-26T01:18:57.893286Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 314.0333557128906,
+      "median": 314.0,
+      "std_dev": 0.757353663444519,
+      "minimum": 313.0,
+      "maximum": 316.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 155.59190368652344,
+      "median": 156.0,
+      "std_dev": 0.4914817810058594,
+      "minimum": 155.0,
+      "maximum": 156.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20220930T011850_20220930T011915_045227_0567EA",
+    "observation_datetime": "2022-09-30T01:19:02.558213Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 169.0,
+      "median": 169.0,
+      "std_dev": 0.0,
+      "minimum": 169.0,
+      "maximum": 169.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 104.22111511230469,
+      "median": 104.0,
+      "std_dev": 0.47529104351997375,
+      "minimum": 103.0,
+      "maximum": 105.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20221223T011847_20221223T011912_046452_0590B0",
+    "observation_datetime": "2022-12-23T01:19:00.422020Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 179.71002197265625,
+      "median": 180.0,
+      "std_dev": 0.45375704765319824,
+      "minimum": 179.0,
+      "maximum": 180.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 134.6016082763672,
+      "median": 135.0,
+      "std_dev": 0.5178841352462769,
+      "minimum": 134.0,
+      "maximum": 136.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20230329T011846_20230329T011911_047852_05BFF0",
+    "observation_datetime": "2023-03-29T01:18:58.521117Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 202.95208740234375,
+      "median": 203.0,
+      "std_dev": 0.5985026955604553,
+      "minimum": 202.0,
+      "maximum": 204.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 114.15492248535156,
+      "median": 114.0,
+      "std_dev": 0.5936315059661865,
+      "minimum": 113.0,
+      "maximum": 115.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20230621T011849_20230621T011914_049077_05E6D2",
+    "observation_datetime": "2023-06-21T01:19:02.166195Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 242.7232208251953,
+      "median": 243.0,
+      "std_dev": 0.4474128782749176,
+      "minimum": 242.0,
+      "maximum": 243.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 143.391357421875,
+      "median": 143.0,
+      "std_dev": 0.48805564641952515,
+      "minimum": 143.0,
+      "maximum": 144.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20230925T011855_20230925T011920_050477_061444",
+    "observation_datetime": "2023-09-25T01:19:07.632824Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 300.96221923828125,
+      "median": 301.0,
+      "std_dev": 0.7082435488700867,
+      "minimum": 300.0,
+      "maximum": 302.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 168.0,
+      "median": 168.0,
+      "std_dev": 0.0,
+      "minimum": 168.0,
+      "maximum": 168.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20231230T011852_20231230T011917_051877_064477",
+    "observation_datetime": "2023-12-30T01:19:04.954268Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 244.5584716796875,
+      "median": 245.0,
+      "std_dev": 0.49656954407691956,
+      "minimum": 244.0,
+      "maximum": 245.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 145.90335083007812,
+      "median": 146.0,
+      "std_dev": 0.6216981410980225,
+      "minimum": 145.0,
+      "maximum": 147.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20240330T011049_20240330T011114_053204_06726F",
+    "observation_datetime": "2024-03-30T01:11:02.339892Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 208.1793670654297,
+      "median": 208.0,
+      "std_dev": 0.5374528169631958,
+      "minimum": 207.0,
+      "maximum": 209.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 143.57464599609375,
+      "median": 144.0,
+      "std_dev": 0.4943976402282715,
+      "minimum": 143.0,
+      "maximum": 144.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20240627T011850_20240627T011915_054502_06A1F9",
+    "observation_datetime": "2024-06-27T01:19:03.190100Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 275.1399230957031,
+      "median": 275.0,
+      "std_dev": 0.5056037902832031,
+      "minimum": 274.0,
+      "maximum": 276.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 184.30126953125,
+      "median": 184.0,
+      "std_dev": 0.45880430936813354,
+      "minimum": 184.0,
+      "maximum": 185.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20240926T011049_20240926T011114_055829_06D289",
+    "observation_datetime": "2024-09-26T01:11:01.575328Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 325.60479736328125,
+      "median": 326.0,
+      "std_dev": 0.48954981565475464,
+      "minimum": 325.0,
+      "maximum": 327.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 139.1336669921875,
+      "median": 139.0,
+      "std_dev": 0.34030216932296753,
+      "minimum": 139.0,
+      "maximum": 140.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20241231T011045_20241231T011110_057229_070A0A",
+    "observation_datetime": "2024-12-31T01:10:57.887836Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 304.5858154296875,
+      "median": 305.0,
+      "std_dev": 0.7897507548332214,
+      "minimum": 303.0,
+      "maximum": 306.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 106.18155670166016,
+      "median": 106.0,
+      "std_dev": 0.3854757249355316,
+      "minimum": 106.0,
+      "maximum": 107.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20250330T011858_20250330T011923_058527_073DED",
+    "observation_datetime": "2025-03-30T01:19:11.188509Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 177.10687255859375,
+      "median": 177.0,
+      "std_dev": 0.8776156306266785,
+      "minimum": 175.0,
+      "maximum": 179.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 65.99481964111328,
+      "median": 66.0,
+      "std_dev": 0.07178517431020737,
+      "minimum": 65.0,
+      "maximum": 66.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20250629T011040_20250629T011105_059854_076F25",
+    "observation_datetime": "2025-06-29T01:10:53.118827Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 183.64700317382812,
+      "median": 184.0,
+      "std_dev": 0.524032473564148,
+      "minimum": 183.0,
+      "maximum": 185.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 167.5074005126953,
+      "median": 168.0,
+      "std_dev": 0.49994534254074097,
+      "minimum": 167.0,
+      "maximum": 168.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20250926T011841_20250926T011906_061152_079FC9",
+    "observation_datetime": "2025-09-26T01:18:54.038620Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 152.7244873046875,
+      "median": 153.0,
+      "std_dev": 0.5472155809402466,
+      "minimum": 152.0,
+      "maximum": 154.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 96.65689849853516,
+      "median": 97.0,
+      "std_dev": 0.4747457206249237,
+      "minimum": 96.0,
+      "maximum": 97.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251207T011838_20251207T011903_062202_07C951",
+    "observation_datetime": "2025-12-07T01:18:51.441106Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 231.47836303710938,
+      "median": 231.0,
+      "std_dev": 0.7739781737327576,
+      "minimum": 230.0,
+      "maximum": 233.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 172.93019104003906,
+      "median": 173.0,
+      "std_dev": 0.6960164308547974,
+      "minimum": 172.0,
+      "maximum": 174.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251214T011036_20251214T011101_062304_07CD45",
+    "observation_datetime": "2025-12-14T01:10:49.258279Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 224.6207733154297,
+      "median": 225.0,
+      "std_dev": 0.48519283533096313,
+      "minimum": 224.0,
+      "maximum": 225.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 111.92767333984375,
+      "median": 112.0,
+      "std_dev": 0.6814969182014465,
+      "minimum": 111.0,
+      "maximum": 113.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251219T011837_20251219T011902_062377_07D023",
+    "observation_datetime": "2025-12-19T01:18:50.334384Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 255.05496215820312,
+      "median": 255.0,
+      "std_dev": 0.22789281606674194,
+      "minimum": 255.0,
+      "maximum": 256.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 172.18124389648438,
+      "median": 172.0,
+      "std_dev": 0.3852319121360779,
+      "minimum": 172.0,
+      "maximum": 173.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251226T011035_20251226T011100_062479_07D413",
+    "observation_datetime": "2025-12-26T01:10:47.780786Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 230.57455444335938,
+      "median": 231.0,
+      "std_dev": 0.4944097101688385,
+      "minimum": 230.0,
+      "maximum": 231.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 91.00836944580078,
+      "median": 91.0,
+      "std_dev": 0.0910910815000534,
+      "minimum": 91.0,
+      "maximum": 92.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251231T011836_20251231T011901_062552_07D6E5",
+    "observation_datetime": "2025-12-31T01:18:48.944682Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 191.7698516845703,
+      "median": 192.0,
+      "std_dev": 0.47457173466682434,
+      "minimum": 191.0,
+      "maximum": 193.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 84.9593276977539,
+      "median": 85.0,
+      "std_dev": 0.19753503799438477,
+      "minimum": 84.0,
+      "maximum": 85.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  }
+]

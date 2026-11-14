@@ -1,0 +1,157 @@
+[
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251207T011838_20251207T011903_062202_07C951",
+    "observation_datetime": "2025-12-07T01:18:51.441106Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 231.47836303710938,
+      "median": 231.0,
+      "std_dev": 0.7739781737327576,
+      "minimum": 230.0,
+      "maximum": 233.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 172.93019104003906,
+      "median": 173.0,
+      "std_dev": 0.6960164308547974,
+      "minimum": 172.0,
+      "maximum": 174.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251214T011036_20251214T011101_062304_07CD45",
+    "observation_datetime": "2025-12-14T01:10:49.258279Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 224.6207733154297,
+      "median": 225.0,
+      "std_dev": 0.48519283533096313,
+      "minimum": 224.0,
+      "maximum": 225.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 111.92767333984375,
+      "median": 112.0,
+      "std_dev": 0.6814969182014465,
+      "minimum": 111.0,
+      "maximum": 113.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251219T011837_20251219T011902_062377_07D023",
+    "observation_datetime": "2025-12-19T01:18:50.334384Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 255.05496215820312,
+      "median": 255.0,
+      "std_dev": 0.22789281606674194,
+      "minimum": 255.0,
+      "maximum": 256.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 172.18124389648438,
+      "median": 172.0,
+      "std_dev": 0.3852319121360779,
+      "minimum": 172.0,
+      "maximum": 173.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251226T011035_20251226T011100_062479_07D413",
+    "observation_datetime": "2025-12-26T01:10:47.780786Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 230.57455444335938,
+      "median": 231.0,
+      "std_dev": 0.4944097101688385,
+      "minimum": 230.0,
+      "maximum": 231.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 91.00836944580078,
+      "median": 91.0,
+      "std_dev": 0.0910910815000534,
+      "minimum": 91.0,
+      "maximum": 92.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  },
+  {
+    "source": "Sentinel-1",
+    "collection": "sentinel-1-grd",
+    "item_id": "S1A_IW_GRDH_1SDV_20251231T011836_20251231T011901_062552_07D6E5",
+    "observation_datetime": "2025-12-31T01:18:48.944682Z",
+    "aoi_name": "Jamnagar Test",
+    "quality_policy": "S1_GCP_WARP_v1",
+    "vv": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 191.7698516845703,
+      "median": 192.0,
+      "std_dev": 0.47457173466682434,
+      "minimum": 191.0,
+      "maximum": 193.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "vh": {
+      "status": "success",
+      "valid_pixels": 125484,
+      "mean": 84.9593276977539,
+      "median": 85.0,
+      "std_dev": 0.19753503799438477,
+      "minimum": 84.0,
+      "maximum": 85.0,
+      "measurement": "source_backscatter_asset_values",
+      "output_grid_resolution_m": 10
+    },
+    "status": "success"
+  }
+]
