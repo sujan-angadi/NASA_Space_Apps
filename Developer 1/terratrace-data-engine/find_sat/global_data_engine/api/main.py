@@ -104,10 +104,28 @@ def global_stats():
         + rainfall["month"].astype(int).astype(str).str.zfill(2)
     )
 
+    # Global country aggregation
+    countries = (
+        facilities["Country"]
+        .dropna()
+        .value_counts()
+        .sort_index()
+        .to_dict()
+    )
+
+    # Global facility category aggregation
+    facility_types = (
+        facilities["Facility_Type"]
+        .dropna()
+        .value_counts()
+        .to_dict()
+    )
+
     return {
         "facility_count": len(facilities),
-        "country_count": int(facilities["Country"].nunique()),
-        "facility_types": facilities["Facility_Type"].value_counts().to_dict(),
+        "country_count": len(countries),
+        "countries": {str(k): int(v) for k, v in countries.items()},
+        "facility_types": {str(k): int(v) for k, v in facility_types.items()},
         "unique_gpm_pixels": int(rainfall["gpm_pixel_key"].nunique()),
         "rainfall_observations": len(rainfall),
         "rainfall_months": int(
